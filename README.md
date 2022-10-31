@@ -1,1 +1,0 @@
-# sntgjm_portfolio
