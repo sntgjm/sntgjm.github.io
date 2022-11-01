@@ -279,7 +279,7 @@ img {
     transition: .3s;
 }
 
-.home_scroll-button:hover {
+.home__scroll-button:hover {
     transform: translateY(0.25rem);
 }
 
