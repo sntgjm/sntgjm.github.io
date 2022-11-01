@@ -396,8 +396,88 @@ img {
     transition: .4s;
 }
 
+.skills__list{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
 .skills__titles{
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
+}
+
+.skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__bar, .skills__percentage {
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar {
+    background-color: var(--first-color-second);
+}
+
+.skills__percentage {
+    display: block;
+    background-color: #fbc8db;
+}
+
+/*Game developer*/
+.skills__csharp{
+    width: 70%;
+}
+.skills__java{
+    width: 80%;
+}
+.skills__cplusplus{
+    width: 30%;
+}
+.skills__none1{
+    width: 0%;
+}
+
+/*frontend developer*/
+.skills__html{
+    width: 60%;
+}
+.skills__css{
+    width: 50%;
+}
+.skills__javascript{
+    width: 50%;
+}
+.skills__none2{
+    width: 0%;
+}
+
+/*software & engines*/
+.skills__adobe{
+    width: 80%;
+}
+.skills__unity{
+    width: 80%;
+}
+.skills__microsoft{
+    width: 70%;
+}
+.skills__figma{
+    width: 60%;
+}
+
+.skills__close .skills__list {
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list {
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow {
+    transform: rotate(-180deg);
 }
