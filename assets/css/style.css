@@ -554,6 +554,7 @@ img {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: var(--mb-2);
+ 
 }
 
 .qualification__button {
@@ -1000,7 +1001,7 @@ img {
         order: 1;
         justify-self: center;
     }
-    .about__container,.skills__container,.portfolio__container,.contact__container,.footer__container {
+    .about__container,.skills__container,.portfolio__container,.project__container,.contact__container,.footer__container {
         grid-template-columns: repeat(2, 1fr);
     }
     .qualification__sections {
@@ -1075,45 +1076,17 @@ img {
     }
 
     .about__buttons{
-        justify-content: center;
+        justify-content: initial;
     }
 
-    .qualification__tabs{
+    .qualification__tabs {
         justify-content: center;
     }
-
-    .qualification__button{
+    .qualification__button {
         margin: 0 var(--mb-1);
     }
-
-    .qualification__sections{
+    .qualification__sections {
         grid-template-columns: .5fr;
     }
-
-    .services__container{
-        grid-template-columns: repeat(3,218px);
-        justify-content: center;
-    }
-
-    .services__content{
-        padding: 6rem 0 2rem 2.5rem;
-    }
-
-    .services__modal-content{
-        width: 450px;
-    }
-
-    .portfolio_img_phone{
-        height: 500px;
-    }
-
-    .portfolio__content{
-        align-items: center;
-    }
     
-
-    .services__container {
-        grid-template-columns: repeat(3, 218px);
-        justify-content: center;
-    }
 }
