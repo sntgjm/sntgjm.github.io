@@ -98,15 +98,6 @@ let swiper = new Swiper(".portfolio__container", {
   },
 })
 
-
-
-var submitMessage = document.getElementById("submitButton"),
-  ContactForm = document.getElementById("ContactForm")
-
-submitMessage.addEventListener("click", () => {
-  ContactForm.submit();
-})
-
 const sections = document.querySelectorAll("section[id]")
 
 function scrollActive() {
