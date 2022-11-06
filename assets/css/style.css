@@ -5,8 +5,10 @@
 :root {
     --header-height: 3rem;
 
-    --hue-color: 241;
-
+    --hue-color: 241; 
+    /*241 base color*/
+    /*620 second color*/
+ 
     /*hsl color*/
     --first-color: hsl(var(--hue-color), 75%, 76%);
     --first-color-second: hsl(var(--hue-color), 75%, 76%);
@@ -17,6 +19,8 @@
     --input-color: hsl(var(--hue-color), 80%, 98%);
     --body-color: hsl(var(--hue-color), 70%, 99%);
     --container-color: #ffffff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
     /*font*/
     --body-font: 'Poppins', sans-serif;
@@ -60,6 +64,35 @@
         --smaller-font-size: .813rem;
     }
 }
+
+/*dark theme*/
+body.dark-theme {
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+}
+
+
+/*button dark and light*/
+.nav__btns {
+    display: flex;
+    align-items: center;
+}
+
+.change-theme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+
+.change-theme:hover {
+    color:var(--first-color)
+}
+
 
 /*base*/
 * {
@@ -872,4 +905,42 @@ img {
 .footer__socials,
 .footer__social {
     color: #FFF;
+}
+
+/*scrollup*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    opacity: .8;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+
+.scrollup:hover {
+    background-color: var(--first-color-alt);
+}
+
+.scrollup__icon {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.show-scroll {
+    bottom: 5rem;
+}
+
+/*scroll bar*/
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: .5rem;
 }
